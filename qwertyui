@@ -5,30 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        table,
-        th,
-        td {
+        th, td {
             border: 1px solid black;
             text-align: center;
+            padding: 8px;
         }
         
     .lekcje{
         color:green;
-        
     }
-
+    table {
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
     </style>
     </head>
     <body>
         <table>
             <thead>
         <tr>
-                  <th style="text-align: center;">klasa 3 X nazwisko i imię</th>
+                  <th style="text-align: center;" colspan="10"><span style="color: greenyellow;">klasa 3 X </span><span style="color: gray;"> - nazwisko i imię</span></th>
         </tr>
-        
-        
         <tr>
-            <th></th>
+            <th colspan="2"></th>
             <th>poniedziałek</th>
             <th>wtorek</th>
             <th>środa</th>
@@ -37,11 +38,10 @@
         </tr>
             </thead>
             <tbody>
-                <tr><td class="lekcje" rowspan="12"><p style="writing-mode: vertical-rl; text-orientation: upright;">LEKCJA</p></td></tr>
-            <tr> 
-              <td>
-            7<sup>10</sup> - 7<sup>55</sup>
-              </td>
+
+            <tr>
+              <td class="lekcje" rowspan="11" style="width: 3em"><p style="writing-mode: vertical-rl; text-orientation: upright; text-align: center;">LEKCJA</p></td>
+              <td>7<sup>10</sup> - 7<sup>55</sup></td>
               <td></td>
               <td></td>
               <td></td>
@@ -77,6 +77,7 @@
                 <td></td>
                 <td></td>
                 <td></td>
+
             </tr>
             <tr>
                 <td>
@@ -87,6 +88,7 @@
                 <td></td>
                 <td></td>
                 <td></td>
+
             </tr>
             <tr>
                 <td>
@@ -97,6 +99,7 @@
                 <td></td>
                 <td></td>
                 <td></td>
+
             </tr>
             <tr>
                 <td>
@@ -142,7 +145,7 @@
                 <td>
                     16<sup>20</sup>-17<sup>05</sup>
                 </td>
-                 <td></td>
+              <td></td>
               <td></td>
               <td></td>
               <td></td>
