@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            text-align: center;
+        }
+        
+    .lekcje{
+        color:green;
+        
+    }
+
+    </style>
+    </head>
+    <body>
+        <table>
+            <thead>
+        <tr>
+                  <th style="text-align: center;">klasa 3 X nazwisko i imię</th>
+        </tr>
+        
+        
+        <tr>
+            <th></th>
+            <th>poniedziałek</th>
+            <th>wtorek</th>
+            <th>środa</th>
+            <th>czwartek</th>
+            <th>piątek</th>
+        </tr>
+            </thead>
+            <tbody>
+                <tr><td class="lekcje" rowspan="12"><p style="writing-mode: vertical-rl; text-orientation: upright;">LEKCJA</p></td></tr>
+            <tr> 
+              <td>
+            7<sup>10</sup> - 7<sup>55</sup>
+              </td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+                <td>
+                    8<sup>00</sup>-8<sup>45</sup>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    8<sup>55</sup>-9<sup>40</sup>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    9<sup>50</sup>-10<sup>35</sup>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    10<sup>45</sup>-11<sup>30</sup>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    11<sup>40</sup>-12<sup>25</sup>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    12<sup>45</sup>-13<sup>30</sup>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    13<sup>50</sup>-14<sup>35</sup>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    14<sup>40</sup>-15<sup>25</sup>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                   15 <sup>30</sup>-16<sup>15</sup>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    16<sup>20</sup>-17<sup>05</sup>
+                </td>
+                 <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            </tbody>
+        </table>
+    </body>
+    </html>
