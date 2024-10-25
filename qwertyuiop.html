@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --dark-color: rgb(88, 88, 255);
+            --light-color: #acf7ef;
+        }
+
+        body {
+            height: 100vh;
+            background: linear-gradient(to right top, var(--dark-color), var(--light-color));
+            justify-content: center;
+            display: flex;
+            align-items: center;
+        }
+
+        .button {
+            background: linear-gradient(to right top, var(--dark-color), var(--light-color));
+            border: none;
+            border-radius: 15px;
+            padding: 8px;
+            cursor: pointer;
+            margin: auto;
+            display: block;
+            box-shadow: 3px 3px 3px rgb(32, 32, 32, 0.5);
+            color: aliceblue;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .button::after {
+            background-color: rgba(255, 255, 255, 0.432);
+            content: " ";
+            transition: transform 1s linear;
+            height: 100px;
+            position: absolute;
+            top: -15px;
+            left: -20px;
+            width: 7px;
+            rotate: 15deg;
+            filter: blur(3px);
+        }
+
+
+        .button:hover::after {
+            transform: translateX(150px);
+
+        }
+
+        .form {
+            padding: 10px;
+            border-radius: 15px;
+            background: linear-gradient(to right top, rgb(54, 97, 216)10%, rgb(159, 181, 253)100%);
+            max-width: 300px;
+            box-shadow: 3px 3px 3px rgb(27, 27, 27);
+        }
+
+        .form .remember-forgot {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14.5px;
+            margin: -15px 0px 15px;
+        }
+
+        .input1 {
+            background: linear-gradient(to right top, var(--dark-color), var(--light-color));
+            border-radius: 15px;
+            border: none;
+            padding: 10px;
+            box-shadow: 3px 3px 3px rgb(32, 32, 32, 0.5);
+            color: #acf7ef;
+            position: relative;
+            
+        }
+
+        .input1::placeholder {
+            color: #ffffff96;
+        }
+
+        .input2 {
+            background: linear-gradient(to right top, var(--dark-color), var(--light-color));
+            border-radius: 15px;
+            border: none;
+            padding: 10px;
+            box-shadow: 3px 3px 3px rgb(43, 42, 42, 0.5);
+
+        }
+
+        .input2::placeholder {
+            color: #ffffff96;
+        }
+
+        ::placeholder {
+            color: rgb(37, 37, 37);
+        }
+
+        .a {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: left 2.4s ease, opacity 1s ease;
+            pointer-events: none;
+            color: #ffffff96;
+            overflow-y: hidden;
+        }
+
+        .b{
+            position: relative;
+        }
+
+        .input-label:focus+.a,
+        .input-label:not(:placeholder-shown)+.a {
+            left: calc(100% +1px);
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <br><br>
+    <form class="form">
+
+        <div class="b">
+            <input class="input1" id="login-input" type="text" placeholder=" " required class="input-label" />
+            <label for="login-input" class="a">User</label>
+        </div>
+        <br>
+        <div class="b">
+            <input class="input2" id="password-input" placeholder=" " required class="input-label" />
+            <label for="password-input" class="a">Password</label>
+        </div>
+        <br>
+        <button class="button" type="submit">Login</button>
+
+    </form>
+
+</body>
+
+</html>
