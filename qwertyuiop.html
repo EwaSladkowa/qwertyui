@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        :root {
+  
+  :root {
             --dark-color: rgb(88, 88, 255);
             --light-color: #acf7ef;
         }
 
         body {
-            height: 100vh;
+            min-height: 100vh;
             background: linear-gradient(to right top, var(--dark-color), var(--light-color));
             justify-content: center;
             display: flex;
@@ -51,7 +52,6 @@
             transform: translateX(150px);
 
         }
-
         .form {
             padding: 10px;
             border-radius: 15px;
@@ -114,11 +114,12 @@
             position: relative;
         }
 
-        .input-label:focus+.a,
-        .input-label:not(:placeholder-shown)+.a {
-            left: calc(100% +1px);
-            opacity: 0;
-        }
+        .input-label:focus ~ .a, .input-label:not(:placeholder-shown) ~ .a {
+             left: calc(100% + 1px); 
+             opacity: 0; 
+            }
+    
+      
     </style>
 </head>
 
@@ -127,12 +128,12 @@
     <form class="form">
 
         <div class="b">
-            <input class="input1" id="login-input" type="text" placeholder=" " required class="input-label" />
+            <input class="input1 input-label" id="login-input" type="text" placeholder=" " required/>
             <label for="login-input" class="a">User</label>
         </div>
         <br>
         <div class="b">
-            <input class="input2" id="password-input" placeholder=" " required class="input-label" />
+            <input class="input2 input-label" id="password-input" placeholder=" " required/>
             <label for="password-input" class="a">Password</label>
         </div>
         <br>
